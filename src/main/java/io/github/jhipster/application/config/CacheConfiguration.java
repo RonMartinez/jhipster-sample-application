@@ -43,6 +43,25 @@ public class CacheConfiguration {
             createCache(cm, io.github.jhipster.application.domain.User.class.getName());
             createCache(cm, io.github.jhipster.application.domain.Authority.class.getName());
             createCache(cm, io.github.jhipster.application.domain.User.class.getName() + ".authorities");
+            createCache(cm, io.github.jhipster.application.domain.Owner.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Owner.class.getName() + ".teamOwners");
+            createCache(cm, io.github.jhipster.application.domain.Team.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Team.class.getName() + ".teamOwners");
+            createCache(cm, io.github.jhipster.application.domain.Team.class.getName() + ".gameTeams");
+            createCache(cm, io.github.jhipster.application.domain.Team.class.getName() + ".seasonTeams");
+            createCache(cm, io.github.jhipster.application.domain.TeamOwner.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Rules.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Rules.class.getName() + ".seasons");
+            createCache(cm, io.github.jhipster.application.domain.Season.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Season.class.getName() + ".weeks");
+            createCache(cm, io.github.jhipster.application.domain.Season.class.getName() + ".seasonTeams");
+            createCache(cm, io.github.jhipster.application.domain.Week.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Week.class.getName() + ".teamOwners");
+            createCache(cm, io.github.jhipster.application.domain.Week.class.getName() + ".weeks");
+            createCache(cm, io.github.jhipster.application.domain.Game.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Game.class.getName() + ".games");
+            createCache(cm, io.github.jhipster.application.domain.GameTeam.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.SeasonTeam.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
